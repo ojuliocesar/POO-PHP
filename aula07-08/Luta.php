@@ -5,7 +5,7 @@ class Luta {
     private $desafiado, $desafiante, $rounds, $aprovada;
 
     public function marcarLuta($desafiado, $desafiante) {
-        if ($desafiado->getCategoria() === $desafiante->getCategoria() && ($desafiado != $desafiante)) {
+        if ($desafiado->getCategoria() === $desafiante->getCategoria() and ($desafiado != $desafiante)) {
             $this->setAprovada(true);
             $this->setDesafiado($desafiado);
             $this->setDesafiante($desafiante);
